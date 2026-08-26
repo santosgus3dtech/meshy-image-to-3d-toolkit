@@ -2,6 +2,8 @@
 
 Portfolio-friendly toolkit for automating an image-to-3D workflow with the Meshy API, then preparing the generated model for 3D printing.
 
+![Image-to-3D workflow](docs/images/workflow.svg)
+
 ## What it demonstrates
 
 - Node.js CLIs for Meshy `image-to-3d`, `multi-image-to-3d`, and print endpoints.
@@ -51,6 +53,10 @@ npm run repair-voxel -- --input outputs/split/model-preto.glb --output outputs/r
 ## Repository hygiene
 
 Generated models, thumbnails, samples, `.env` files, and API responses are intentionally ignored. This keeps the public repo focused on code and workflow, not private assets or generated customer files.
+
+## CI
+
+GitHub Actions runs Node syntax checks for the CLIs and compiles the Python helpers.
 
 ## Portfolio angle
 
