@@ -1,0 +1,27 @@
+{
+  "name": "meshy-image-to-3d-toolkit",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "CLI toolkit for turning images into 3D printable assets with Meshy, color splitting, multi-view crops, and print repair helpers.",
+  "keywords": [
+    "meshy",
+    "image-to-3d",
+    "3d-printing",
+    "3mf",
+    "glb",
+    "automation"
+  ],
+  "scripts": {
+    "image-to-3d": "node src/meshy-image-to-3d.js",
+    "multi-image-to-3d": "node src/meshy-multi-image-to-3d.js",
+    "meshy-print": "node src/meshy-print.js",
+    "crop-multiview": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/crop-multiview.ps1",
+    "split-by-color": "python src/split_by_color.py",
+    "repair-voxel": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/repair-voxel.ps1",
+    "check": "node --check src/meshy-image-to-3d.js && node --check src/meshy-multi-image-to-3d.js && node --check src/meshy-print.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

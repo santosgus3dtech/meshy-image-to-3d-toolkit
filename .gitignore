@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+outputs/
+samples/
+image_to_model/
+__pycache__/
+*.py[cod]
+*.glb
+*.gltf
+*.stl
+*.3mf
+*.obj
+*.fbx
+*.usdz
