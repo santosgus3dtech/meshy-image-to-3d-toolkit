@@ -19,7 +19,8 @@
     "crop-multiview": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/crop-multiview.ps1",
     "split-by-color": "python src/split_by_color.py",
     "repair-voxel": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/repair-voxel.ps1",
-    "check": "node --check src/meshy-image-to-3d.js && node --check src/meshy-multi-image-to-3d.js && node --check src/meshy-print.js"
+    "mesh-quality": "python -m src.mesh_quality",
+    "check": "node --check src/meshy-image-to-3d.js && node --check src/meshy-multi-image-to-3d.js && node --check src/meshy-print.js && python -m unittest discover -s tests -v"
   },
   "engines": {
     "node": ">=18"

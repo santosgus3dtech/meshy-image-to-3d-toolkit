@@ -4,6 +4,8 @@ Portfolio-friendly toolkit for automating an image-to-3D workflow with the Meshy
 
 ![Image-to-3D workflow](docs/images/workflow.svg)
 
+![Synthetic post-processing and mesh quality gallery](docs/images/synthetic-workflow.png)
+
 ## What it demonstrates
 
 - Node.js CLIs for Meshy `image-to-3d`, `multi-image-to-3d`, and print endpoints.
@@ -11,6 +13,7 @@ Portfolio-friendly toolkit for automating an image-to-3D workflow with the Meshy
 - Polling, timeout handling, JSON artifact capture, and model downloads.
 - Python helpers for multi-view image crops, color-based GLB splitting, and Blender voxel repair.
 - Practical 3D printing workflow thinking: GLB/3MF/STL outputs, color separation, texture cleanup, and slicer-ready files.
+- A deterministic print-readiness report for watertightness, connected components, positive volume, thin-wall screening and build volume.
 
 ## Requirements
 
@@ -48,6 +51,12 @@ npm run split-by-color -- --input outputs/model.glb --output outputs/split/model
 
 ```bash
 npm run repair-voxel -- --input outputs/split/model-preto.glb --output outputs/repaired/model-preto.stl --voxel-size 0.01
+```
+
+Generate an inspectable quality report from sanitized mesh measurements:
+
+```bash
+npm run mesh-quality -- docs/demo/synthetic-mesh-metrics.json --output outputs/mesh-quality-report
 ```
 
 ## Repository hygiene

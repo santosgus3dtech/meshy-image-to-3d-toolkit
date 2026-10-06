@@ -1,0 +1,10 @@
+{
+  "source": "synthetic portfolio fixture",
+  "vertices": 184260,
+  "faces": 368512,
+  "watertight": true,
+  "components": 1,
+  "volume_cm3": 86.42,
+  "thin_wall_ratio": 0.012,
+  "bounds_mm": [92.4, 76.8, 128.2]
+}
