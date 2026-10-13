@@ -1,5 +1,7 @@
 # Meshy Image to 3D Toolkit
 
+🇧🇷 [Leia este README em Português (Brasil)](README.pt-BR.md).
+
 Portfolio-friendly toolkit for automating an image-to-3D workflow with the Meshy API, then preparing the generated model for 3D printing.
 
 ![Image-to-3D workflow](docs/images/workflow.svg)
